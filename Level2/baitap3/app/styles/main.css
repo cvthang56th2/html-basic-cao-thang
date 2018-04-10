@@ -1,0 +1,551 @@
+body {
+    position: relative;
+    font-family: bodyFont;
+    width: 1600px
+}
+
+@font-face {
+    font-family: bodyFont;
+    src: url(../fonts/BebasNeue.otf);
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.navbar {
+    height: 75px;
+    margin-bottom: 0px;
+    border-radius: 0;
+}
+
+#myNavbar a:hover {
+    color: #65ba99;
+    border-bottom: 2px solid #65ba99;
+    padding-bottom: 5px;
+}
+
+#myNavbar ul:first-child {
+    margin-left: 200px;
+}
+
+#contentNav {
+    margin-top: 15px;
+}
+
+.affix~.container-fluid {
+    position: relative;
+    top: 75px;
+}
+
+.container-fluid {
+    padding: 0;
+    border-radius: 0;
+}
+
+#work {
+    text-align: center;
+    padding-top: 55px;
+    height: 1840px;
+    color: #fff;
+    background-color: #65ba99;
+    margin: 0;
+}
+
+#work h1 {
+    font-size: 48px;
+    font-weight: normal;
+}
+
+#work h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 0 45px 0;
+}
+
+#news {
+    height: 680px;
+    text-align: center;
+    padding-top: 75px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #cdcdcd;
+}
+
+#sponsor {
+    height: 200px;
+    background-color: #bebebe;
+}
+
+#bio {
+    height: 600px;
+    text-align: center;
+    padding-top: 75px;
+    color: #fff;
+    background-color: #e2534b;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#contact {
+    /* padding-top:75px; */
+    position: relative;
+    height: 530px;
+    color: #fff;
+    background-color: #00bcd4;
+}
+
+#socialNav {
+    margin-left: 100px;
+    display: inline-block;
+}
+
+#socialNav li {
+    margin-top: 5px;
+    margin-right: 15px;
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    padding-top: 5px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#socialNav li a {
+    color: #252222;
+    text-decoration: none;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+    color: #65ba99;
+    border-bottom: 2px solid #65ba99;
+    padding-bottom: 5px;
+    background-color: #252222;
+}
+
+.navbar-inverse {
+    background-color: #252222;
+}
+
+.row {
+    margin: 0;
+}
+
+.row img {
+    width: 100%;
+    height: 100%;
+}
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+    padding: 0;
+}
+
+#news h1 {
+    margin: 0;
+    font-family: Bebas Neue;
+    font-size: 48px;
+    color: #252222;
+    margin-bottom: 70px;
+}
+
+#bio h1 {
+    font-family: Bebas Neue;
+    font-size: 48px;
+    color: #252222;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#socialNavBio li {
+    margin-top: 5px;
+    margin-right: 15px;
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    padding-top: 5px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#socialNavBio li a {
+    color: #e2534b;
+    text-decoration: none;
+}
+
+#contactContent {
+    position: absolute;
+    top: 40px;
+    left: 450px;
+    text-align: center;
+}
+
+#contactContent h1 {
+    font-size: 48px;
+    color: #252222;
+    margin-bottom: 60px;
+}
+
+#contactContent h2 {
+    font-size: 48px;
+}
+
+#contactContent h3 {
+    font-size: 60px;
+    border: 3px solid #ffffff;
+    padding: 5px 60px;
+}
+
+#contactContent h4 {
+    font-size: 30px;
+}
+
+#contactContent p {
+    padding-top: 100px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.workPic {
+    position: relative;
+    /* float: left; */
+}
+
+.workPic img {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(101, 186, 153);
+}
+
+.workPic:hover .overlay {
+    opacity: 0.8;
+}
+
+.text {
+    width: 99%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.text img {
+    width: 35px;
+    height: 35px;
+}
+
+#header {
+    height: 500px;
+}
+
+#header img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#headContent {
+    position: absolute;
+    top: 120px;
+    left: 330px;
+    color: #ffffff;
+    width: 800px;
+}
+
+#headContent h1:first-child {
+    font-size: 90px;
+    font-weight: normal;
+    margin: 0;
+}
+
+#headContent h1:nth-child(2) {
+    font-size: 90px;
+    font-weight: normal;
+    margin: 0;
+    position: absolute;
+    top: 65px;
+}
+
+#headContent h1:nth-child(3) {
+    font-size: 90px;
+    font-weight: normal;
+    margin: 0;
+    position: absolute;
+    top: 130px;
+}
+
+#headContent h2 {
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0;
+    position: absolute;
+    top: 205px;
+}
+
+#logo {
+    margin-left: 245px;
+}
+
+#logo a {
+    font-size: 48px;
+    color: #ffffff;
+}
+
+.text ul {
+    margin-top: 50px;
+    padding: 0;
+}
+
+.text ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#testimonial {
+    position: relative;
+}
+
+#testimonialContent {
+    position: absolute;
+    top: 60px;
+    left: 300px;
+    text-align: center;
+    width: 770px;
+}
+
+#testimonialContent p:nth-child(1) {
+    text-align: left;
+    margin: 0;
+}
+
+#testimonialContent p:nth-child(2) {
+    text-align: right;
+    margin: 0;
+}
+
+#testimonialContent h1 {
+    font-size: 36px;
+    color: #ffffff;
+    margin: 0;
+}
+
+#testimonialContent h2 {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: right;
+}
+
+#today {
+    background-color: #59a386;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#news-tags {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: right;
+    color: #e74c3c;
+    font-weight: 600;
+    font-style: italic;
+    padding-right: 10px;
+}
+
+#news-tags span {
+    color: #62b9b0
+}
+
+#news-in-homepage img {
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+#news-in-homepage p {
+    color: #666767;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#news-in-homepage h4 {
+    color: #62b9b0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#readmore {
+    text-align: right;
+}
+
+#readmore button {
+    color: #e2534b;
+    font-size: 14px;
+    font-weight: normal;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#tags-and-othernews h3 {
+    color: #59a386;
+    font-family: Bebas Neue;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.buttonTags {
+    background-color: #59a386;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 10px 6px 0 0;
+    padding: 2px 7px;
+}
+
+.activeButtonTag {
+    background-color: #e2534b;
+}
+
+#from-the-blog {
+    margin-top: 60px;
+}
+
+#from-the-blog h2 {
+    margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    color: #818181;
+    font-weight: lighter;
+}
+
+#from-the-blog h2 span {
+    font-style: normal;
+    color: #252222;
+}
+
+.news-from-the-blog {
+    margin-top: 20px;
+}
+
+.news-from-the-blog-pic {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-right: 20px;
+}
+
+.news-from-the-blog p {
+    color: #252222;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.news-from-the-blog h6 {
+    margin: 0;
+    color: #e2534b;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#bioContentLeft {
+    text-align: center;
+}
+
+#bioContentLeft h2 {
+    font-family: Bebas Neue;
+    font-size: 36px;
+}
+
+#bioContentLeft img {
+    border-radius: 50%;
+    width: 50%;
+    margin: 20px 0;
+}
+
+#bioContentRight h3 {
+    font-family: Bebas Neue;
+    font-size: 18px;
+}
+
+#bioContentRight P {
+    font-size: 14px;
+}

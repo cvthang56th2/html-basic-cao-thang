@@ -1,0 +1,268 @@
+body {
+	margin: auto;
+	width: 1440px;
+	height: 3000px;
+	font-family: Gentium Book Basic ,Open Sans, Arial, Helvetica, sans-serif;
+}
+
+#header {
+	color: #ffffff;
+	width: 100%;
+	height: 770px;
+	background-color: gray;
+}
+
+#headContent {
+	position: relative;
+	width: 770px;
+	bottom: 225px;
+	left: 375px;
+}
+
+#headContent h1 {
+	font-size: 60px;
+	margin: 0;
+	font-weight: normal;
+}
+
+#headContent h2 {
+	font-size: 30px;
+	margin: 0;
+	font-weight: normal;
+	color: #d7d7d7;
+}
+
+#writeby {
+	float: left;
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+#writeby p {
+	font-size: 12px;
+	color: #d7d7d7;
+	font-weight: bold;
+	margin: 0;
+}
+
+#writeby a {
+	font-size: 15px;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#activity {
+	float: right;
+}
+
+#activity ul {
+	margin-top: 15px;
+}
+
+#activity ul li {
+	padding: 0 10px;
+	display: inline;
+}
+
+#activity a {
+	color: #ffffff;
+}
+
+#contentAboveHr span {
+	float: left;
+	padding: 10px;
+}
+
+#content {	
+	width: 100%;
+	height: 1620px;
+}
+
+#contentText {
+	width: 800px;
+	margin: 0 270px 0 380px;
+/*	padding-top: 35px;*/
+	counter-reset: paragraph;
+
+}
+
+#line {
+	width: 75px;
+	float: left;
+}
+
+#container {
+	position: relative;
+	float: left;
+	bottom: 200px;
+	margin-top: 50px;
+	width: 700px;
+/*	float: right;*/
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 1.5;
+}
+
+#container ul li {
+	margin: 35px 0;
+}
+
+#container h2 {
+	margin: 30px 0;
+	text-align: center;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: normal;
+	color: #626262;
+}
+
+#container p:before {
+	font-size: 22px;
+	font-style: italic;
+	position: absolute;
+    margin-left: -50px;
+    color: #bfbfbf;
+    content: counter(paragraph)".";
+    counter-increment: paragraph 5;
+    font-family: Gentium Book Basic ,Open Sans, Arial, Helvetica, sans-serif;
+}
+
+#fp {
+	margin-top: 15px;
+}
+
+#fp:before {
+	font-size: 22px;
+	font-style: italic;
+	position: absolute;
+    margin-left: -50px;
+    color: #bfbfbf;
+    content: "1." ;
+    font-family: Gentium Book Basic ,Open Sans, Arial, Helvetica, sans-serif;
+}
+
+#container i:before {
+	font-size: 10px;
+	font-weight: bold;
+	position: absolute;
+    margin-left: -55px;
+    margin-top: 20px;
+    color: #bfbfbf;
+    content: "LINES";
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+}
+
+#container li:before {
+	position: absolute;
+	margin-top: 45px;
+    margin-left: -85px;
+    font-style: italic;
+    color: #bfbfbf;
+    content: counter(paragraph) ".";
+    counter-increment: paragraph 5;
+    font-family: Gentium Book Basic, Open Sans, Arial, Helvetica, sans-serif;
+}
+
+#container button {
+	border: none;
+	font-weight: bold;
+	background-color: #ffffff;
+	font-family: Open Sans, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #a8a8a8;
+	opacity: 0.6;
+	position: absolute;
+	bottom: -200px;
+	left: 335px;
+	/*margin-left: 300px;*/
+	/*margin-top: 150px;*/
+}
+
+#container button:hover {
+	cursor: pointer;
+}
+
+#footer {
+	width: 100%;
+	height: 250px;
+}
+
+#footerContent {
+	position: relative;
+	bottom: 150px;
+	padding-left: 655px;
+	/*left: 655px; */
+}
+
+#footerContent button {
+	width: 200px;
+	height: 60px;
+	background-color: rgba(255, 255, 255, 0);
+	border: 2px solid #2ecc71;
+	border-radius: 20px;
+	color: #2ecc71;
+	font-size: 12px;
+
+}
+
+#footerContent button:hover {
+	cursor: pointer;
+}
+
+#abovefooter {
+	width: 100%;
+	height: 360px;
+	background-color: #000000;
+}
+
+.abovefooterContent p {
+	margin: 0 0 60px 0;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.abovefooterContent h1 {
+	margin: 0 0 10px 0;
+	font-size: 35px;
+	font-weight: normal;
+}
+
+.abovefooterContent h2 {
+	margin: 0;
+	font-size: 30px;
+	color: #d7d7d7;
+}
+
+.abovefooterPic {
+	float: left;
+	width: 50%;
+}
+
+.abovefooterPic img {
+	width: 100%;
+	opacity: 0.5;
+}
+
+.abovefooterPic img:hover {
+	opacity: 1;
+
+}
+
+#leftAbovefooterText {
+	margin: 70px 0 0 70px;
+	position: absolute;
+	width: 550px;
+	color: #ffffff;
+}
+
+#rightAbovefooterText {
+	margin: 70px 0 0 790px;
+	position: absolute;
+	width: 550px;
+	color: #ffffff;
+}
+
+.clearfix {
+	clear: both;
+}
